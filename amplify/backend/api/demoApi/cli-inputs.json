@@ -3,7 +3,7 @@
   "paths": {
     "/": {
       "name": "/",
-      "lambdaFunction": "api",
+      "lambdaFunction": "demoApi",
       "permissions": {
         "setting": "open"
       }
