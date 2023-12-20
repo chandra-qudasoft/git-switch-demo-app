@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "api": {}
+        "demoApi": {
+          "deploymentBucketName": "amplify-gitswitchdemoapp-dev-190935-deployment",
+          "s3Key": "amplify-builds/demoApi-71466846377441784d72-build.zip"
+        }
+      },
+      "api": {
+        "demoApi": {}
       }
     }
   }
