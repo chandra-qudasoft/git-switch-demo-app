@@ -1,6 +1,6 @@
 {
   "api": {
-    "demo": {
+    "demoApi": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "api"
+          "resourceName": "demoApi"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,10 +16,28 @@
     }
   },
   "function": {
-    "api": {
+    "demoApi": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_demoApi_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "demoApi"
+        }
+      ]
+    },
+    "AMPLIFY_function_demoApi_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "demoApi"
+        }
+      ]
     }
   }
 }
